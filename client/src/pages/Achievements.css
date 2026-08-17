@@ -1,0 +1,76 @@
+.achievement-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+.achievement-page h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.achievement-subtitle {
+  color: #cbd5e1;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.achievement-card {
+  background: #1e293b;
+  border-radius: 20px;
+  padding: 30px;
+  transition: 0.3s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 25px #22c55e;
+}
+
+.badge-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.achievement-card h2 {
+  margin-bottom: 10px;
+  color: #22c55e;
+}
+
+.achievement-card p {
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.unlock-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.lock-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: not-allowed;
+  font-weight: bold;
+}
+
+.unlock-btn:hover {
+  background: #16a34a;
+}
