@@ -36,7 +36,7 @@ function AddCourse() {
       formData.append("duration", duration);
 
       const res = await axios.post(
-        "http://localhost:5000/api/courses/add",
+        "https://devarena-e-learning-platform.onrender.com/api/courses/add",
         formData,
         {
           headers: {

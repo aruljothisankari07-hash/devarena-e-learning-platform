@@ -24,7 +24,7 @@ function EditQuiz() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/quizzes"
+        "https://devarena-e-learning-platform.onrender.com/api/quizzes"
       );
 
       const quiz = res.data.quizzes.find(
@@ -57,7 +57,7 @@ function EditQuiz() {
     try {
 
       await axios.put(
-        `http://localhost:5000/api/quizzes/${id}`,
+        `https://devarena-e-learning-platform.onrender.com/api/quizzes/${id}`,
         {
           courseId,
           question,

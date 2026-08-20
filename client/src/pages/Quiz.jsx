@@ -34,7 +34,7 @@ function Quiz() {
     try {
 
       const res = await axios.get(
-        `http://localhost:5000/api/quizzes/${courseId}`
+        `https://devarena-e-learning-platform.onrender.com/api/quizzes/${courseId}`
       );
 
       if (res.data.quizzes.length === 0) {
@@ -71,7 +71,7 @@ function Quiz() {
 
     // XP Update
     await axios.put(
-      "http://localhost:5000/api/dashboard/xp",
+      "https://devarena-e-learning-platform.onrender.com/api/dashboard/xp",
       {
         userId: user._id,
         xp: finalScore * 20,
@@ -81,7 +81,7 @@ function Quiz() {
 
     // Complete Course
     await axios.post(
-      "http://localhost:5000/api/dashboard/complete",
+      "https://devarena-e-learning-platform.onrender.com/api/dashboard/complete",
       {
         userId: user._id,
         courseId,

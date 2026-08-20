@@ -13,7 +13,7 @@ function Users() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/leaderboard"
+        "https://devarena-e-learning-platform.onrender.com/api/leaderboard"
       );
 
       setUsers(res.data.users);

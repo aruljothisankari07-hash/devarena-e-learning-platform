@@ -19,7 +19,7 @@ function AddQuiz() {
   const fetchCourses = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/courses"
+        "https://devarena-e-learning-platform.onrender.com/api/courses"
       );
 
       setCourses(res.data.courses);
@@ -44,7 +44,7 @@ function AddQuiz() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/quizzes/add",
+        "https://devarena-e-learning-platform.onrender.com/api/quizzes/add",
         {
           courseId,
           question,

@@ -18,7 +18,7 @@ function CourseDetails() {
   const fetchCourse = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/courses/${id}`
+        `https://devarena-e-learning-platform.onrender.com/api/courses/${id}`
       );
 
       setCourse(res.data.course);
@@ -30,7 +30,7 @@ function CourseDetails() {
   const markAsCompleted = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/dashboard/complete",
+        "https://devarena-e-learning-platform.onrender.com/api/dashboard/complete",
         {
           userId: user._id,
           courseId: course._id,
@@ -117,7 +117,7 @@ function CourseDetails() {
               href={
                 course.notes.startsWith("http")
                   ? course.notes
-                  : `http://localhost:5000${course.notes}`
+                  : `https://devarena-e-learning-platform.onrender.com${course.notes}`
               }
               target="_blank"
               rel="noreferrer"

@@ -15,7 +15,7 @@ function Courses() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/courses"
+        "https://devarena-e-learning-platform.onrender.com/api/courses"
       );
 
       setCourses(res.data.courses);
@@ -52,7 +52,7 @@ function Courses() {
           >
 
             <img
-              src={`http://localhost:5000${course.image}`}
+              src={`https://devarena-e-learning-platform.onrender.com${course.image}`}
               alt={course.title}
               className="course-image"
             />

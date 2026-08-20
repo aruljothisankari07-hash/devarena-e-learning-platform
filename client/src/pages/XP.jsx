@@ -24,7 +24,7 @@ function XP() {
 
       const res = await axios.get(
 
-        `http://localhost:5000/api/dashboard/${user._id}`,
+        `https://devarena-e-learning-platform.onrender.com/api/dashboard/${user._id}`,
 
         {
           headers: {

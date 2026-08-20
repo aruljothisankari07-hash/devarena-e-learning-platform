@@ -15,7 +15,7 @@ function ManageCourses() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/courses"
+        "https://devarena-e-learning-platform.onrender.com/api/courses"
       );
 
       setCourses(res.data.courses);
@@ -39,7 +39,7 @@ function ManageCourses() {
     try {
 
       const res = await axios.delete(
-        `http://localhost:5000/api/courses/${id}`
+        `https://devarena-e-learning-platform.onrender.com/api/courses/${id}`
       );
 
       alert(res.data.message);
@@ -72,7 +72,7 @@ function ManageCourses() {
             >
 
               <img
-                src={`http://localhost:5000${course.image}`}
+                src={`https://devarena-e-learning-platform.onrender.com${course.image}`}
                 alt={course.title}
                 style={{
                   width: "100%",

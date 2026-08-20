@@ -12,7 +12,7 @@ function ManageQuiz() {
 
   const fetchQuizzes = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/quizzes");
+      const res = await axios.get("https://devarena-e-learning-platform.onrender.com/api/quizzes");
 
       setQuizzes(res.data.quizzes);
 
@@ -32,7 +32,7 @@ function ManageQuiz() {
     try {
 
       const res = await axios.delete(
-        `http://localhost:5000/api/quizzes/${id}`
+        `https://devarena-e-learning-platform.onrender.com/api/quizzes/${id}`
       );
 
       alert(res.data.message);
